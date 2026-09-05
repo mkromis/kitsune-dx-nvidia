@@ -14,6 +14,10 @@ cp -avf "/ctx/system_files"/. /
 
 # this installs a package from fedora repos
 dnf5 install -y tmux
+dnf5 install -y kde-partitionmanager
+
+# Uninstall unnecessary packages
+dnf5 remove -y gnome-disk-utility
 
 # Use a COPR Example:
 #
